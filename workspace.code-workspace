@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../../../media/idrees/E0ACF0BAACF08C721/_development/ElectronicsProductSalesProject_20220118/ElectronicsProductSalesProject"
+		},
+		{
+			"path": "../../../../media/idrees/E0ACF0BAACF08C721/_development/school"
+		},
+		{
+			"path": "../../../../media/idrees/E0ACF0BAACF08C721/_development/projectZ"
+		},
+		{
+			"path": "../../../../media/idrees/E0ACF0BAACF08C721/_development/custom_work1"
+		},
+		{
+			"path": "../home_automation"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projectZ_FINAL"
+	}
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProjectZ</title>
+  <link href="assest/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="assest/js/bootstrap.bundle.min.js"></script>
+  <script src="assest/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="assest/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style type="text/css" media="screen">
+    /*=======================Main Header style==================== */
+    .main_headrer{
+      height: 90vh;
+      background-image: url('assest/images/image.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1c1c3b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /*dIGITAL APP*/
+  .app_services_data{
+    color: white;
+    width: 212px;
+    margin-top: 19px;
+  }
+  .app_services_data h4{
+    line-height: 1.6;
+    font-family: auto;
+    font-size: 26px;
+
+    font-weight: 500;
+  }
+  .lorem_text_div{
+    color: #cfcfcffc;
+    font-family: auto;
+  }
+  .lorem_text_div .lorem_text_div_text{
+    font-size: 17px;
+  }
+  .lorem_text_div .Get_Started {
+    background: white;
+    padding-left: 28px;
+    padding-right: 31px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 26px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: emoji;
+  }
+  .right_col .div_data{
+    background-color: white;
+    height: 380px;
+    /*width: 100%;*/
+    transform: rotate(-9deg);
+    margin-top: 30px;
+  }
+  .right_col .div_data .main_banner_image{
+    filter: brightness(0.5);
+  }
+   /*=======================End Main Header style==================== */
+  </style>
+</head>
+<body>
+  <!-- Site Code -->
+  <header id="header" class="main_headrer">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#" style="color: white; font-family: auto;">
+          <img src="assest/images/logo.png" alt="alt" style="height: 81px; width: 100px; filter: invert(1);" />
+          &nbsp;ProjectZ
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto main_nav">
+            <li class="nav-item active">
+              <a onclick="openNav()" class="nav-link" href="#"><i style="font-size: 21px; color: white;"
+                  class="fa fa-bars"></i> <span class="sr-only"></span></a>
+            </li>
+           <!--  <li class="custom_li">
+               <button type="button" class="btn btn-success btn-sm Get_Started">Started</button>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- MAIN_HEADRE -->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="app_services_data">
+                  <h4>Digital App Excellence Services </h4>
+                </div>
+                <div class="lorem_text_div">
+                   <p class="lorem_text_div_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore empor incididunt ut labore.</p>
+                   <button type="button" class="btn btn-default Get_Started">Get Started</button>
+                </div>
+            </div>
+            <div class="col-md-6 right_col">
+                <div class="shadow-lg p-3 mb-5 bg-body rounded div_data">
+                      <img src="assest/images/backgroud.jpg" alt="alt" class="img-fluid main_banner_image">
+                </div>
+            </div>
+        </div>
+      </div>
+</header>
+
+<style>
+  .first_section{
+      background-image:url('assest/images/background_banner_3.jpg') ;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: brightness(0.5);
+  }
+</style>
+
+<section class="first_section">
+    <div class="container">
+      <div class="section_background">
+        erewrwer
+      </div>
+    </div>
+</section>
+
+
+<style>
+
+    
+  .complete_projects {
+  background-color:#f5f5f5;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.count-text {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
+}
+</style>
+
+<!-- <section class="complete_projects pt-5 pb-5 mt-5 mb-5">
+  <div class="container complete_projects_container">
+    <div class="row">
+        <br/>
+       <div class="col text-center">
+      <h2>Complete Projects</h2>
+      </div>
+    </div>
+      <div class="row text-center">
+            <div class="col">
+            <div class="counter">
+        <i class="fa fa-code fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+         <p class="count-text ">Our Customer</p>
+      </div>
+            </div>
+                <div class="col">
+                 <div class="counter">
+        <i class="fa fa-coffee fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+        <p class="count-text ">Happy Clients</p>
+      </div>
+                </div>
+                <div class="col">
+                    <div class="counter">
+        <i class="fa fa-lightbulb-o fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+        <p class="count-text ">Project Complete</p>
+      </div></div>
+                <div class="col">
+                <div class="counter">
+        <i class="fa fa-bug fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+        <p class="count-text ">Coffee With Clients</p>
+      </div>
+                </div>
+           </div>
+  </div>
+</section> -->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>
