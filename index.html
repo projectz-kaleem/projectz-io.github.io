@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assest/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assest/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assest/images/favicon_io/site.webmanifest">
   <style>
     body {
       caret-color: rgba(0, 0, 0, 0);
@@ -1519,6 +1524,9 @@
                 <li class="drop_down_li"><a class="dropdown-item" href="index.html#projectComplete">Projects Completed</a></li>
               </ul> -->
             </li>
+            <li class="nav-item desktop_nav_item dropdown">
+              <a class="nav-link" id="navbarDropdown" href="index.html#pricing">Pricing</a>
+            </li>
             <li class="nav-item desktop_nav_item">
               <a class="nav-link" onclick="software(event)" href="index.html#Software">Software</a>
             </li>
@@ -1584,7 +1592,7 @@
 
                     <p id="number3" class="number">250</p>
                     <span></span>
-                    <p>Computer Vision Projects</p>
+                    <p>Computer Vision</p>
                 </div>
                 <div class="item wow " data-number="50">
                     <img src="assest/images/icons8-protect-50.png" style="filter: invert(1);" alt="">
@@ -1665,15 +1673,18 @@
     }
     
     .projectFactsWrap .item:nth-child(2){
-      background: rgb(74 134 235);
+      /* background: rgb(74 134 235); */
+      background: rgb(74 134 235 / 82%);
     }
     
     .projectFactsWrap .item:nth-child(3){
-      background: rgb(152 202 255);
+      /* background: rgb(152 202 255); */
+      background: rgb(152 202 255 / 91%);
     }
     
     .projectFactsWrap .item:nth-child(4){
-      background: rgb(112 179 251);
+      /* background: rgb(112 179 251); */
+      background: rgb(112 179 251 / 87%);
     }
     
     .projectFactsWrap .item p.number{
@@ -1762,19 +1773,19 @@
 
     }
 
-
     </style>
+
+
   <section class="section_our_services" id="services">
     <div class="container services_container">
       <div class="row justify-content-center">
         <div class="col-12 what_we_serve_div">
-          <h2 class="what_we_serve_heading_heading lead">Specializing in advanced analytics and machine learning digital solutions</h2>
+          <h2 class="what_we_serve_heading_heading lead">Specializing in Advanced Analytics and Machine Learning digital solutions</h2>
           <p class=" what_we_serve_heading_paragraph">
-            We design, develop and maintain Machine Learning and Artificial Intelligence research and applications, for
-            both mobile and web. ProjectZ is a specialized digital consulting agency focusing on Analytics and Machine Learning for both web and mobile. 
-            In today's world, advanced data systems drive commercial and public sector decisions. We have built innovative digital solutions that are 
-            leveraged by industry leaders in Big Data, Human Resources and E-commerce. Headquartered in Tallahassee with offices in the US and PAK. 
-            Our team of highly skilled professionals allow clients to focus on their customers, while ProjectZ focuses on supporting the tech.
+            Design, develop and maintain software solutions, we specialize in web and mobile Business Intelligence, Data Engineering, Machine Learning and Artificial Intelligence research and applications. 
+            ProjectZ excels as a digital consulting agency, with a focus on Analytics and Machine Learning for both web and mobile. 
+            Advanced data systems drive commercial and public sector value-based decisions, however building a team of specialists can be cost prohibitive. 
+            ProjectZ has helped companies to build innovative digital solutions in Big Data, Human Resources and E-commerce. With offices in NA and APAC, our team of highly skilled professionals allow clients to focus on their customers, while we support and augment their tech stack.
           </p>
         </div>
       </div>
@@ -1789,7 +1800,7 @@
               <h3 class="Marketing_Consulting_heading">Natural Language Processing (NLP)</h3>
             </div>
             <div class="Marketing_Consulting_paragraph">
-              <p> ProjectZ provides analysis services such as text analysis, sentiment analysis, survey analysis, chat
+              <p> ProjectZ provides services for text analysis, sentiment analysis, survey analysis, chat
                 bots, text generation, extraction and its interpretation and text summarization.
               </p>
             </div>
@@ -1822,8 +1833,8 @@
               <h3 class="Marketing_Consulting_heading">Computer Vision (CV)</h3>
             </div>
             <div class="Marketing_Consulting_paragraph">
-              <p> ProjectZ provides detection services for assets such as face, emotion or person. ProjectZ also supports optical
-                character recognitions, pose estimations or classification and objects detections.
+              <p> ProjectZ provides detection services for faces, emotions or persons. ProjectZ also supports optical
+                character recognition, pose estimation or classification and object detection.
               </p>
             </div>
           </div>
@@ -1838,7 +1849,7 @@
               <h3 class="Marketing_Consulting_heading">Analytics</h3>
             </div>
             <div class="Marketing_Consulting_paragraph">
-              <p> ProjectZ provides analytical services in data forecasting, anomaly and fraud detection in management
+              <p> ProjectZ provides analytical services in data forecasting, anomaly and fraud detection in products
                 or systems and gives predictions with the help of recommendation engine.
               </p>
             </div>
@@ -1891,9 +1902,301 @@
             <div class="Marketing_Consulting_paragraph">
 
               <p>
-                ProjectZ develops tailored android and IOS application, loaded with user friendly features, to boost
+                ProjectZ develops tailored android and IOS applications, loaded with user friendly features, to boost
                 your business with latest technology and optimum cost.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .plan-title {
+      color: #4285f4;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .plan-prices {
+      font-size: 55px;
+      font-weight: bold;
+    }
+
+    .per-month-text{
+      width: 85px;
+      line-height: 15px;
+      text-align: initial;
+      /* position: absolute; */
+      top: 15px;
+      padding-left: 5px;
+      font-size: 12px;
+      padding-top: 13px;
+    }
+
+    .pt-13 {
+      padding-top: 13px;
+    }
+
+    .card {
+      background-color: #EEECEC;
+      font-size: 14px;
+    }
+
+    .book-btn {
+      background-color: #4285f4;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 30px;
+    }
+
+    .btn-outer-div {
+      padding-top: 20px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff;
+    }
+
+    .card-slogan {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+    }
+
+    .Includes {
+      font-weight: bold;
+      padding-left: 15px;
+    }
+
+    .list-div ul {
+      /* list-style-image: url('./assest/images/greencheck.png') ; */
+      padding-left: 15px;
+    }
+
+    .list-div ul li {
+      list-style: none;
+      position: relative;
+      padding-left: 15px;
+      line-height: 30px;
+    }
+
+    .list-div ul li::before {
+      content: '✓';
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+    }
+
+    .list-div-2 ul {
+      /* list-style-image: url('./assest/images/greencheck.png') ; */
+      padding-left: 15px;
+    }
+
+    .list-div-2 ul li {
+      list-style: none;
+      position: relative;
+      padding-left: 15px;
+      line-height: 38px;
+    }
+
+    .list-div-2 ul li::before {
+      content: '✓';
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+    }
+
+
+
+    .list-div-3 ul {
+      /* list-style-image: url('./assest/images/greencheck.png') ; */
+      padding-left: 15px;
+    }
+
+    .list-div-3 ul li {
+      list-style: none;
+      position: relative;
+      padding-left: 15px;
+      line-height: 36px;
+    }
+
+    .list-div-3 ul li::before {
+      content: '✓';
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+    }
+
+
+
+    .arrow-right {
+      display: inline-block;
+      font-size: 14px;
+      padding-left: 2px;
+    }
+
+    .sub-div {
+      line-height: 0px!important;
+      /* padding-left: 13px; */
+      color: gray;
+      padding-bottom: 20px;
+      padding-top: 3px;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <section class="pricing_section" id="pricing">
+    <div class="container">
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-7 what_we_serve_div">
+          <h2 class="what_we_serve_heading_heading lead">Select a plan that matches your experience.</h2>
+          <p class="what_we_serve_heading_paragraph">
+            There is a reason companies like <b>Databricks</b> trust us. ProjectZ is a pioneer in development as a service (DaaS). 
+            Avoid the high hourly rates of staffing agencies and inflated salaries of top-tier Silicon Valley programmers. 
+            We offer transparent pricing to match every company at any stage of growth. 
+            We offer credibility, certainty and we save you time and money of recruiting qualified technical professionals. 
+            Best of all we allow our clients to swap developer skills and qualifications based on project needs without changes to their subscription fee. 
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <div class="plan-title">StartUp Plan</div>
+                <div class="d-inline-flex">
+                  <div class="d-inline-block pt-13">$</div>
+                  <div class="plan-prices d-inline-block">6k</div>
+                  <div class="d-inline-block per-month-text">/mo Invoiced monthly</div>
+                </div>
+                <div class="px-3">Focus on your idea and build an application that people will love.</div>
+                <div class="btn-outer-div" style="padding-top: 10px;">
+                  <a  onclick="openNav()" href="#contact_us" class="btn btn-primary book-btn">
+                    Get Started
+                    <span class="arrow-right"><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="card-slogan">Get 12th month free when you commit to one year or more</div>
+              <div class="list-div">
+                <div class="Includes" >Includes :</div>
+                <ul>
+                  <li>
+                    Upto 80 Dev and QA hours
+                  </li>
+                  <li>
+                      <div class="d-inline-block">Business Analysis Support
+                      </div>
+                  </li>
+                  <li>
+                    Website Development Support
+                  </li>
+                  <li>
+                    UI/UX Design Support
+                    
+                  </li>
+                  <li>
+                    Quality Assurance Support 
+                    <!-- <div class="sub-div">Upto 800 hours</div> -->
+                  </li>
+                  <li>
+                    10+ Programming Languages
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <div class="plan-title">SMB Plan</div>
+                <div class="d-inline-flex">
+                  <div class="d-inline-block pt-13">$</div>
+                  <div class="plan-prices d-inline-block">11k</div>
+                  <div class="d-inline-block per-month-text">/mo Invoiced monthly</div>
+                </div>
+                <div class="px-3">Get cutting-edge services for your business with a dedicated PM.</div>
+                <div class="btn-outer-div" style="padding-top: 10px;">
+                  <a  onclick="openNav()" href="#contact_us" class="btn btn-primary book-btn">Get Started <span class="arrow-right"><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+              </div>
+              <div class="card-slogan">Get 12th month free when you commit to one year or more</div>
+              <div class="list-div">
+                <div class="Includes" >Includes :</div>
+                <ul>
+                  <li>
+                    Upto 160 Dev and QA hours
+                  </li>
+                  <li>
+                    Dedicated Project Manager   
+                  </li>
+                  <li>
+                    Dedicated Scrum Team
+                  </li>
+                  <li>
+                    Information Assurance Support
+                  </li>
+                  <li>
+                    Administrative Assistance
+                  </li>
+                  <li>
+                    10+ Programming Languages
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <div class="plan-title">Enterprise Plan</div>
+                <div class="d-inline-flex">
+                  <div class="d-inline-block pt-13">$</div>
+                  <div class="plan-prices d-inline-block">~k</div>
+                  <div class="d-inline-block per-month-text">/mo Invoiced monthly</div>
+                </div>
+                <div class="px-3">Red-carpet service from our team to meet all of your business needs.</div>
+                <div class="btn-outer-div" style="padding-top: 10px;">
+                  <a  onclick="openNav()" href="#contact_us" class="btn btn-primary book-btn">Get Started<span class="arrow-right"><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+              </div>
+              <div class="card-slogan">Get 12th month free when you commit to one year or more</div>
+
+              <div class="list-div">
+                <div class="Includes" >Includes :</div>
+                <ul>
+                  <li>
+                    Custom Dev and QA hours
+                  </li>
+                  <li>
+                    Access to Senior Experts
+                  </li>
+                  <li>
+                    Comprehensive Technical Documentation
+                  </li>
+                  <li>
+                    Dedicated Scrum Team   
+                  </li>
+                  <li>
+                    Information Assurance Support
+                  </li>
+                  <li>
+                    Administrative Assistance
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1905,12 +2208,13 @@
   <style>
     .section_three{
       padding-top: 100px;
+      padding-top: 50px;
     }
   </style>
 
-  <section class="section_three future_bg mt-5" id="Software">
+  <section class="section_three future_bg" id="Software">
     <div class="container ">
-      <div class="row justify-content-center mt-5">
+      <div class="row justify-content-center">
         <div class="col-7 what_we_serve_div">
           <h2 class="what_we_serve_heading_heading lead">Our Projects</h2>
           <p class="lead what_we_serve_heading_paragraph">
@@ -1926,10 +2230,9 @@
         <div class="col-md-5 will-fadeIn ">
           <div class="Communicate_feedback_div">
             <h2 class="Communicate_feedback_heading">Medical Imaging</h2>
-            <p class="mb-4">ProjectZ has deployed medical imaging algortihms for clients such as Swallowtail.
-              With the advance of technology, AI is being used in medical imaging to analyze X-rays, MRIs,
-              Ultrasounds, radiographic imaging with great accuracy to recognize conditions, identify stages, and help
-              with treatment assessments.</p>
+            <p class="mb-4">ProjectZ has deployed medical imaging algorithms for clients such as Swallowtail. 
+              With the advance of technology, AI is being used in medical imaging to analyze X-rays, MRIs, 
+              Ultrasounds, radiographic imaging with great accuracy to recognize conditions, identify stages, and help with treatment assessment.</p>
           </div>
         </div>
       </div>
@@ -1939,10 +2242,9 @@
         <div class="col-md-5 will-fadeIn ">
           <div class="Communicate_feedback_div">
             <h2 class="Communicate_feedback_heading">Try-Ons and Measurements</h2>
-            <p class="mb-4">Virtual-try on and digital measurements have enhanced the fashion industry and online
-              shopping business by helping users to visualizing the products more conveniently and by giving them
-              personalized recommendations. ProjectZ partnered with various SMB to build Virtual Body Measurements, Nails Try-On,
-              Clothes Try-On and more.</p>
+            <p class="mb-4">Virtual-try on and digital measurements have enhanced the fashion industry and online shopping business by 
+              helping users to visualize the products more conveniently and by giving them personalized recommendations. 
+              ProjectZ partnered with various SMBs to build Virtual Body Measurements, Nails Try-On, Clothes Try-On and more.</p>
           </div>
         </div>
         <div class="col-md-7 will-fadeIn gift_card_image_data">
@@ -2066,11 +2368,11 @@
             <div class="front card-block">
               <img class="card-img-top" src="assest/images/no-profile-picture-300x216.jpg" alt="Card image cap">
               <h4 class="card-title" style="margin-top: 10px;">Ali Abbas</h4>
-              <h6 class="card-subtitle">Senior machine learning engineer</h6>
+              <h6 class="card-subtitle">CV/ML Senior / Team-Lead</h6>
             </div>
             <div class="back card-block">
-              <p> Young and Enthusiast ML Engineer with up to 2 Years of working experience in Machine Learning
-                Algorithms and AI, having specialist in AI models and application</p>
+              <p> Senior Machine Learning and Computer Vision Engineer leading the respective 
+                department </p>
             </div>
           </div>
         </div>
@@ -2148,11 +2450,12 @@
             <div class="front card-block">
               <img class="card-img-top" src="assest/images/no-profile-picture-300x216.jpg" alt="Card image cap">
               <h4 class="card-title" style="margin-top: 10px;">Tayyab Azeem</h4>
-              <h6 class="card-subtitle">Quality assurance engineer</h6>
+              <h6 class="card-subtitle">SQA Engineer</h6>
             </div>
             <div class="back card-block">
-              <p>Exuberant young professional with intensive training in Software Quality Assurance Engineering. Ability
-                to develop and execute software test plans in order to identify software problems and their causes.</p>
+              <p>Tayyab Azeem responsible for monitoring, inspecting and proposing measures to 
+                correct or improve an organization's final products in order to meet established 
+                quality standards.</p>
             </div>
           </div>
         </div>
@@ -2202,7 +2505,6 @@
     </div>
   </section> 
   <br>
-
   <style>
     .testimonial_container{
       padding-top: 100px;
@@ -2353,6 +2655,9 @@
             <div class="slide"><img src="assest/images/ocean-builders-logo-white-200x43-1.png"></div>
             <div class="slide"><img src="assest/images/logo (1).png"></div>
             <div class="slide"><img src="assest/images/anlyz.svg"></div>
+            <div class="slide"><img src="assest/images/SKOLEOM.png"></div>
+            <div class="slide"><img src="assest/images/Hoolsy.png"></div>
+            <div class="slide"><img src="assest/images/netorola.png"></div>
             <div class="slide"><img
                 src="assest/images/logo_header-4b304ba000661fb75f218242c31b83eae1eaf2bbd2831c548926b982b1c4c3d2.png">
             </div>
@@ -2481,18 +2786,18 @@
         <div class="col-md-6">
           <div class="icon_main_div">
             <div class="wrapper">
-              <div class="button">
+              <a class="button" style="text-decoration: none;" target="_blank" href="https://www.facebook.com/projectz.io/">
                 <div class="icon">
                   <i class="fa fa-facebook-f"></i>
                 </div>
                 <span>Facebook</span>
-              </div>
-              <div class="button">
+              </a>
+              <a class="button" style="text-decoration: none;" target="_blank" href="https://www.linkedin.com/company/projectz-incorporated">
                 <div class="icon">
                   <i class="fa fa-linkedin"></i>
                 </div>
                 <span>LinkedIn</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
