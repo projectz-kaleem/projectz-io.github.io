@@ -2872,7 +2872,7 @@
     <br />
     <br />
     <div class="container">
-      <form class="desktop_form">
+      <form class="desktop_form" id="web_to_lead">
         <div class="form-group mb-3">
           <input requried type="text" placeholder="First Name" id="fname" class="form-control p-3 rounded-3 rounded-0" />
         </div>
@@ -3384,7 +3384,46 @@
             },
           }
         );
+      } else {
+      $.ajax({
+      type: "POST",
+      url: "https://script.google.com/macros/s/AKfycbzW8AMFEbDmosVsaQZYMC3FDV3S4sfrKZvVIoR20c77gdB3n5Jf9RSDfSOEaAmckFKoJA/exec",
+      data: {
+          "First_Name": fname,
+          "Last_Name": lname,
+          "Email": email,
+          "Subject": subject,
+          "Message": message
+        },
+        success: function (result) {
+          console.log(result);
+        },
+        dataType: "json"
+      });
+
+
+      $.notify(
+          {
+            title: "<strong>Contact Form,</strong>",
+            message: "<br>Thank you for reaching out",
+            icon: 'far fa-file-alt',
+          },
+          {
+            type: "primary",
+            allow_dismiss: true,
+            delay: 3000,
+            placement: {
+              from: "top",
+              align: "right"
+            },
+          }
+        );
+
+      document.getElementById("web_to_lead").reset();
+
       }
+
+
 
     }
 
